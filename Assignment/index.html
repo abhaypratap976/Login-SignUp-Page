@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+
+            <div class="tabs">
+                <button type="button" class="active">Log In</button>
+                <button type="button">Sign Up</button>
+            </div>
+
+            
+
+            <div class="login-form">
+                <form>
+                    <div class="email-field">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="login-method">
+                        <button type="button" id="password-btn" class="active">Password</button>
+                        <button type="button" id="otp-btn">OTP</button>
+                    </div>
+
+                    <div class="password-field" id="password-field">
+                        <label for="password">Password *</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button
+                            type="button"
+                            id="toggle-password"
+                            aria-label="Show or hide password"
+                        >👁</button>
+                    </div>
+
+                    <div class="otp-field" id="otp-field" style="display: none;">
+                        <label for="otp">OTP *</label>
+                        <input
+                            type="text"
+                            id="otp"
+                            name="otp"
+                            placeholder="Enter your OTP"
+                            inputmode="numeric"
+                            disabled
+                        >
+                        <a href="#" id="get-otp">Get OTP</a>
+                    </div>
+
+                    <a href="#" id="forgot-password">Forgot Your Password?</a>
+
+                    <button type="submit">Log In</button>
+                    <p class="success-message" id="login-message" role="status"></p>
+                </form>
+
+                <div class="social-icons">
+    <a href="https://accounts.google.com/" aria-label="Google" target="_blank">
+        <img src="assets/google.svg" alt="Google">
+    </a>
+
+    <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" >
+        <img src="assets/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://account.apple.com/" aria-label="Apple" target="_blank" >
+        <img src="assets/apple.svg" alt="Apple">
+    </a>
+
+    <a href="https://www.paypal.com/" aria-label="PayPal" target="_blank">
+        <img src="assets/paypal.svg" alt="PayPal">
+    </a>
+
+                    <h2>Login with Social Accounts</h2>
+                </div>
+            </div>
+
+            <div class="signup-form">
+                <form>
+                    <div class="email-field">
+                        <label for="signup-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="signup-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="signup-method-row">
+                        <div class="signup-method">
+                            <button type="button" id="signup-otp-btn" class="active">OTP</button>
+                            <button type="button" id="signup-password-btn">Password</button>
+                        </div>
+
+                        <div class="otp-field" id="signup-otp-field">
+                            <label for="signup-otp">OTP *</label>
+                            <input
+                                type="text"
+                                id="signup-otp"
+                                name="otp"
+                                placeholder="Enter your OTP"
+                                inputmode="numeric"
+                                required
+                            >
+                            <a href="#" id="signup-get-otp">Get OTP?</a>
+                        </div>
+
+                        <div class="password-field" id="signup-password-field" style="display: none;">
+                            <label for="signup-password">Password *</label>
+                            <input
+                                type="password"
+                                id="signup-password"
+                                name="password"
+                                placeholder="Enter your password"
+                                disabled
+                            >
+                        </div>
+                    </div>
+
+                    <div class="mailing-list">
+                        <input type="checkbox" id="mailing-list" name="mailing-list">
+                        <label for="mailing-list">
+                            Join Our Mailing List - Get updates on Rollbacks,
+                            special pricing, hot new items, gift ideas and more.
+                        </label>
+                    </div>
+
+                    <div class="recaptcha">
+                        <input type="checkbox" id="recaptcha" name="recaptcha" required>
+                        <label for="recaptcha">I'm not a robot</label>
+                    </div>
+
+                    <button type="submit">Register</button>
+                    <p class="success-message" id="signup-message" role="status"></p>
+                    
+
+                    <p>
+                        By registering, you agree to our
+                        <a href="#">Terms & Conditions</a>.
+                    </p>
+                </form>
+
+               <div class="social-icons">
+    <a href="https://accounts.google.com/" aria-label="Google" target="_blank" >
+        <img src="assets/google.svg" alt="Google">
+    </a>
+
+    <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" >
+        <img src="assets/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://account.apple.com/" aria-label="Apple" target="_blank" >
+        <img src="assets/apple.svg" alt="Apple">
+    </a>
+
+    <a href="https://www.paypal.com/" aria-label="PayPal" target="_blank" >
+        <img src="assets/paypal.svg" alt="PayPal">
+    </a>
+
+                    <h2>Login with Social Accounts</h2>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
